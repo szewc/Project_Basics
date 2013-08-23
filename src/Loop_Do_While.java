@@ -38,6 +38,7 @@ public class Loop_Do_While {
 		  else input.next();
 		} 
 		while (inputInt1 < 1 || inputInt1 > 8);
+		
 		System.out.println("Nice "+inputInt1);
 		
 		
