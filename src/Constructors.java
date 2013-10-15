@@ -3,7 +3,7 @@ class Machine {
 	private int number;
 	
 	public Machine() {							// constructor, same name as a class (including capitals), 
-												// doesn't return anything, runs always when a class is initialized
+												// no return type, runs always when a class is initialized
 		name = "Test";							// name of every Machine object will be set to 'Test' upon creation
 												// since it's a part of a constructor 
 		System.out.println(name + " running");
@@ -12,9 +12,8 @@ class Machine {
 		this(name, 5);	
 		/*
 		 * calling another constructor that accepts string and int	
-		 * this way one simple (or complex constructors) can be run along other 
+		 * this way one simple (or complex constructors) can be run in another one
 		 */
-		
 		this.name = name;
 		System.out.println(name + " running");
 	}
@@ -27,7 +26,6 @@ class Machine {
 	}
 }
 public class Constructors {
-
 	public static void main(String[] args) {
 		Machine machine1 = new Machine();		// it's really a call to constructor method
 		/*
